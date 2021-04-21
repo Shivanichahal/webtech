@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: grey;
+  height: 250px;
+ }
+
+.flex-container>div {
+  background-color: pink;
+  color: white;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+
+}
+</style>
+</head>
+<body>
+<h1>The flex</h1>
+<div class="flex-container" >
+  <div style="color: red">1</div>
+  <div>2</div>
+  <div style="flex-shrink: 8">3</div>
+  <div style="order: -2">4</div>
+  <div style="align-self: flex-end;">5</div>
+  <div style="flex: 1 0 400px">6</div>
+  <div style="flex: 8 4 auto;">7</div>
+  <div style="flex: 2 8 250px">8</div>
+</html>
