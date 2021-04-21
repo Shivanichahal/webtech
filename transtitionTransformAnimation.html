@@ -1,0 +1,48 @@
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  }
+  div:hover {
+  width: 300px;
+}
+img {
+width: 400px;
+height: 300px;
+transform: rotate(-10deg);
+}
+a {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+}
+</style>
+</head>
+<body>
+<h1>The transition </h1>
+<div></div>
+<h2> Transform</h2>
+<img src="/Users/shivanichahal/Desktop/html/pic.png" alt="pic"><br><br>
+<h3>Animations</h3> 
+<a ></a> 
+</body>
+</html>
