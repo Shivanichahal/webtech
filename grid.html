@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: pink;
+  padding: 10px;
+  grid-gap: 20px 50px;
+  grid-auto-flow: column;
+ grid-template-rows: repeat(auto-fill, 10em);
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}.item15{grid-column-start: 9;
+grid-column-end: span 3;}
+
+.item8 {
+  grid-area: 1 / 2 / 5 / 6;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The Grid</h1>
+<p>The <em>CSS Grid Layout Module</em> provides a system for laying out elements in rows and columns  in a way that can remain completely flexible to fit a variety of screen sizes or mimic a print page layout. </p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+  <div class="item9">9</div>
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+  <div class="item13">13</div>
+  <div class="item14">14</div>
+  <div class="item15">15</div>
+</div>
+
+</body>
+</html>
